@@ -1,0 +1,72 @@
+{
+ "rows": {
+  "standard": {
+   "gTV": {
+    "mean": 1.0811,
+    "ci": [
+     0.9481,
+     1.2279
+    ]
+   },
+   "gVT": {
+    "mean": 1.0454,
+    "ci": [
+     0.9234,
+     1.1686
+    ]
+   },
+   "jsd_TV": {
+    "mean": 0.2095,
+    "ci": [
+     0.1819,
+     0.2426
+    ]
+   },
+   "jsd_VT": {
+    "mean": 0.1926,
+    "ci": [
+     0.165,
+     0.2219
+    ]
+   }
+  },
+  "calibrated": {
+   "gTV": {
+    "mean": 0.7485,
+    "ci": [
+     0.6661,
+     0.8323
+    ]
+   },
+   "gVT": {
+    "mean": 0.7386,
+    "ci": [
+     0.6573,
+     0.825
+    ]
+   },
+   "jsd_TV": {
+    "mean": 0.0986,
+    "ci": [
+     0.0803,
+     0.1176
+    ]
+   },
+   "jsd_VT": {
+    "mean": 0.1001,
+    "ci": [
+     0.082,
+     0.1197
+    ]
+   }
+  },
+  "reduction_pct": {
+   "gTV": 30.8,
+   "gVT": 29.4,
+   "jsd_TV": 52.9,
+   "jsd_VT": 48.0
+  },
+  "method": "percentile bootstrap B=2000, random.seed(42); reduction computed on full-precision means"
+ },
+ "input": "e4_n15_results.json"
+}

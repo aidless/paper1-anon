@@ -1,0 +1,61 @@
+{
+ "method": "aggregate over 4 alpha x 3 tau per method (relative to none)",
+ "rows": [
+  {
+   "method": "platt",
+   "n": 12,
+   "gamma": 0.1552,
+   "dgamma_pct": 1.7,
+   "cv5": 0.1081,
+   "dcv5_pct": 14.2,
+   "cv8": 0.0849,
+   "dcv8_pct": 13.9,
+   "cv5_se_of_mean": 0.0038
+  },
+  {
+   "method": "temperature",
+   "n": 12,
+   "gamma": 0.1602,
+   "dgamma_pct": 5.0,
+   "cv5": 0.1021,
+   "dcv5_pct": 7.8,
+   "cv8": 0.0808,
+   "dcv8_pct": 8.3,
+   "cv5_se_of_mean": 0.0038
+  },
+  {
+   "method": "isotonic",
+   "n": 12,
+   "gamma": 0.1537,
+   "dgamma_pct": 0.7,
+   "cv5": 0.0997,
+   "dcv5_pct": 5.3,
+   "cv8": 0.0783,
+   "dcv8_pct": 5.0,
+   "cv5_se_of_mean": 0.0038
+  },
+  {
+   "method": "histogram",
+   "n": 12,
+   "gamma": 0.1542,
+   "dgamma_pct": 1.0,
+   "cv5": 0.1065,
+   "dcv5_pct": 12.4,
+   "cv8": 0.0839,
+   "dcv8_pct": 12.5,
+   "cv5_se_of_mean": 0.0038
+  },
+  {
+   "method": "conf_gating",
+   "n": 12,
+   "gamma": 0.4292,
+   "dgamma_pct": 181.1,
+   "cv5": 0.1049,
+   "dcv5_pct": 10.8,
+   "cv8": 0.083,
+   "dcv8_pct": 11.2,
+   "cv5_se_of_mean": 0.0038
+  }
+ ],
+ "input": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision14_2026-08-08\\PAPER1\\evidence\\canonical_results_v5.json"
+}

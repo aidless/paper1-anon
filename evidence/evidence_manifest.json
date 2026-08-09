@@ -1,0 +1,70 @@
+{
+ "evidence_package": "PAPER1 evidence (Revision14)",
+ "note": "evidence_manifest.json itself is excluded from its own file listing (self-hash excluded by design).",
+ "files": {
+  "README.md": {
+   "size": 737,
+   "sha256": "B774449571F346B69D774FDD85EAF97506C70211C1B99852174657DA4329494D"
+  },
+  "analyze_heldout_20260806.py": {
+   "size": 21781,
+   "sha256": "A665F26FCFD40A1C01165C72F7490F2B70635ACC073958A167C71DC8B41E8F52"
+  },
+  "analyze_p1.py": {
+   "size": 8761,
+   "sha256": "022E01988248F2EECEF3B65A0427593F2C9FFE312965CA08FC87BCD3AC88C21A"
+  },
+  "canonical_results_v5.json": {
+   "size": 43603,
+   "sha256": "4245B5195C819C90CEE021B4957E4AEEF75A06B1BCB724631A05560DA045A1CE"
+  },
+  "e4_30seed_calibrated.json": {
+   "size": 299,
+   "sha256": "286E9147C05CB67659567248F56228A3684C42B7A86DD84B4EEF09903474F263"
+  },
+  "e4_n15_results.json": {
+   "size": 10144,
+   "sha256": "2BAE1D72C36F221DF35EF2CAC98BEA7D0F7D9455FDE506053DB74265ADCB1E64"
+  },
+  "heldout_validations_20260806.json": {
+   "size": 14938,
+   "sha256": "70C9AFDD4FD06E3BF2752C1C27F7F84BBC39C58EA467E70EDF88A68EC3077E86"
+  },
+  "input_manifest_20260806.json": {
+   "size": 6348,
+   "sha256": "4847B35ED92E2709E7621F0F9A405B706552DED96ECDCFB596C7886AB3AB778A"
+  },
+  "joint_full_F_v10_results.json": {
+   "size": 837782,
+   "sha256": "3EC617F11406CB821494BAED33EE87B2BC80378DDAD16A7B745A1CBDF938F2F4"
+  },
+  "analyses/e4_table_verification_20260808.json": {
+   "size": 1018,
+   "sha256": "B32376E3383D8B2D24456562E2FBA36D3ECFB9249442325B0ED5B1223B2726DE"
+  },
+  "analyses/noise_sim_verification_20260808.json": {
+   "size": 1318,
+   "sha256": "56D66048802DCC75942E8DA638E484254A62C0D57AE45558431EA05D5E1263FB"
+  },
+  "analyses/p1c_monitor_case_20260808.json": {
+   "size": 1312,
+   "sha256": "F85626605EE8B28C2244FD344DBD6B08F6CC3F412EAD5EA817F00E238F6454BE"
+  },
+  "scripts/p1c_monitor_case_20260808.py": {
+   "size": 2134,
+   "sha256": "03E8FF0EDC78CEB218D40D6170580AA9712609EE99CD60246FCB7AE3283C97DD"
+  },
+  "scripts/verify_e4_table_20260808.py": {
+   "size": 2673,
+   "sha256": "1CC08A91E6D78143AFE963FA3717DB3E623AECAEAF3EB532B1C52567CEBA4D4B"
+  },
+  "scripts/verify_noise_sim_20260808.py": {
+   "size": 2027,
+   "sha256": "596F101057D6D86F284F9D42101B4D72F1FF0502B8496739C636FF6BD416DC7C"
+  },
+  "scripts/analyses/p1c_monitor_case_20260808.json": {
+   "size": 1312,
+   "sha256": "F85626605EE8B28C2244FD344DBD6B08F6CC3F412EAD5EA817F00E238F6454BE"
+  }
+ }
+}

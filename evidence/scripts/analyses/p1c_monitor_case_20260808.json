@@ -1,0 +1,67 @@
+{
+ "case": "Deployment selection of an evaluator using the Calibration Monitor rules (P1-C)",
+ "rows": [
+  {
+   "condition": "DS Self-Eval",
+   "gamma": 0.0332,
+   "CV": 5.477,
+   "CNR": 0.006,
+   "ECE": 0.2,
+   "decisions": [
+    "R3-red: increase evaluator diversity",
+    "R4-skip: do not apply calibration"
+   ]
+  },
+  {
+   "condition": "DS x Qwen (qwen eval)",
+   "gamma": 0.1865,
+   "CV": 2.306,
+   "CNR": 0.081,
+   "ECE": 0.2,
+   "decisions": [
+    "R3-red: increase evaluator diversity",
+    "R4-skip: do not apply calibration"
+   ]
+  },
+  {
+   "condition": "Qwen x DS (official A)",
+   "gamma": 0.9866,
+   "CV": 0.241,
+   "CNR": 4.094,
+   "ECE": 0.2,
+   "decisions": [
+    "R2-amber: apply confidence-gating"
+   ]
+  },
+  {
+   "condition": "Ablation max",
+   "gamma": 1.0384,
+   "CV": 0.366,
+   "CNR": 2.837,
+   "ECE": 0.2,
+   "decisions": [
+    "R3-red: increase evaluator diversity"
+   ]
+  },
+  {
+   "condition": "Qwen37",
+   "gamma": 1.0591,
+   "CV": 0.26,
+   "CNR": 4.073,
+   "ECE": 0.2,
+   "decisions": [
+    "R2-amber: apply confidence-gating"
+   ]
+  },
+  {
+   "condition": "DS self-eval r30",
+   "gamma": 0.936,
+   "CV": 0.196,
+   "CNR": 4.776,
+   "ECE": 0.2,
+   "decisions": [
+    "R2-amber: apply confidence-gating"
+   ]
+  }
+ ]
+}
