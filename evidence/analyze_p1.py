@@ -3,10 +3,10 @@
 import json, math, os, statistics as st
 from itertools import combinations
 
-OUT = r"C:\Users\Administrator\AppData\Roaming\haolo_desktop\thread-groups\default\科研\outputs\five_paper_acceptance_baseline_20260806\analyses"
-SRC = r"F:\Research\PAPER1_CONSOLIDATED\joint_full_F_v10_results.json"
-TEX = r"F:\Research\PAPER1_CONSOLIDATED\main.tex"
-ECE_CAL = r"F:\Research\experiments\ece_calibration.json"
+OUT = r"<WORKSPACE>\thread-groups\default\科研\outputs\five_paper_acceptance_baseline_20260806\analyses"
+SRC = r"<ARCHIVE_ROOT>\PAPER1_CONSOLIDATED\joint_full_F_v10_results.json"
+TEX = r"<ARCHIVE_ROOT>\PAPER1_CONSOLIDATED\main.tex"
+ECE_CAL = r"<ARCHIVE_ROOT>\experiments\ece_calibration.json"
 
 def betacf(a, b, x, itmax=200, eps=3e-12):
     qab = a+b; qap = a+1.0; qam = a-1.0
@@ -170,9 +170,9 @@ if m:
             prov_rows.append({"condition": parts[0], "setting": parts[1] if len(parts)>1 else "",
                               "claim": parts[2] if len(parts)>2 else "", "tier": parts[3] if len(parts)>3 else ""})
 result1["condition_provenance"] = {"parsed_rows": prov_rows, "n_parsed": len(prov_rows),
-  "local_data_map": {"F_v10": SRC, "mini_F_v7": r"F:\Research\PAPER1_CONSOLIDATED\joint_mini_F_v7_results.json",
-    "official matched pairs": r"F:\Research\experiments\official_A_qwen_eval_ds_exec.json (+B/C/D)",
-    "mm_epc replications": r"F:\Research\experiments\mm_epc_*.json"},
+  "local_data_map": {"F_v10": SRC, "mini_F_v7": r"<ARCHIVE_ROOT>\PAPER1_CONSOLIDATED\joint_mini_F_v7_results.json",
+    "official matched pairs": r"<ARCHIVE_ROOT>\experiments\official_A_qwen_eval_ds_exec.json (+B/C/D)",
+    "mm_epc replications": r"<ARCHIVE_ROOT>\experiments\mm_epc_*.json"},
   "note": "Per-condition seed counts and API calls are not persisted per condition (archive holds totals only: 4000 calls / 861305 tokens for F_v10)."}
 
 os.makedirs(OUT, exist_ok=True)

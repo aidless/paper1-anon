@@ -1,0 +1,283 @@
+{
+ "condition": "C1",
+ "rep": 0,
+ "seed": 1,
+ "T": 10,
+ "N": 3,
+ "final_ece": 0.05,
+ "n_records": 30,
+ "mean_conf": 0.985,
+ "accuracy": 1.0,
+ "records": [
+  {
+   "round": 1,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "A warehouse stores 15 crates, each with 11 boxes, each with 7 items. How many items total?",
+   "gold": "1155",
+   "answer": "1155"
+  },
+  {
+   "round": 1,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A store has 2 shelves, each with 4 items. 3 items are sold. How many items remain?",
+   "gold": "5",
+   "answer": "5"
+  },
+  {
+   "round": 1,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 8 crates, each with 11 boxes, each with 3 items. How many items total?",
+   "gold": "264",
+   "answer": "264"
+  },
+  {
+   "round": 2,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "A warehouse stores 8 crates, each with 11 boxes, each with 3 items. How many items total?",
+   "gold": "264",
+   "answer": "264"
+  },
+  {
+   "round": 2,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A box has 7 rows of 6 chocolates. 4 are eaten. How many chocolates remain?",
+   "gold": "38",
+   "answer": "38"
+  },
+  {
+   "round": 2,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A store has 5 shelves, each with 8 items. 5 items are sold. How many items remain?",
+   "gold": "35",
+   "answer": "35"
+  },
+  {
+   "round": 3,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "A warehouse stores 8 crates, each with 11 boxes, each with 3 items. How many items total?",
+   "gold": "264",
+   "answer": "264"
+  },
+  {
+   "round": 3,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 7 crates, each with 5 boxes, each with 8 items. How many items total?",
+   "gold": "280",
+   "answer": "280"
+  },
+  {
+   "round": 3,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "Tom has 77 dollars, spends 50 on a book, then earns 27. How many dollars does he have?",
+   "gold": "54",
+   "answer": "54"
+  },
+  {
+   "round": 4,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "A warehouse stores 9 crates, each with 9 boxes, each with 3 items. How many items total?",
+   "gold": "243",
+   "answer": "243"
+  },
+  {
+   "round": 4,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A box has 4 rows of 5 chocolates. 6 are eaten. How many chocolates remain?",
+   "gold": "14",
+   "answer": "14"
+  },
+  {
+   "round": 4,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "Tom has 77 dollars, spends 50 on a book, then earns 27. How many dollars does he have?",
+   "gold": "54",
+   "answer": "54"
+  },
+  {
+   "round": 5,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 15 crates, each with 11 boxes, each with 2 items. How many items total?",
+   "gold": "330",
+   "answer": "330"
+  },
+  {
+   "round": 5,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "Tom has 102 dollars, spends 56 on a book, then earns 10. How many dollars does he have?",
+   "gold": "56",
+   "answer": "56"
+  },
+  {
+   "round": 5,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 15 crates, each with 11 boxes, each with 2 items. How many items total?",
+   "gold": "330",
+   "answer": "330"
+  },
+  {
+   "round": 6,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "Tom has 102 dollars, spends 56 on a book, then earns 10. How many dollars does he have?",
+   "gold": "56",
+   "answer": "56"
+  },
+  {
+   "round": 6,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A store has 6 shelves, each with 7 items. 10 items are sold. How many items remain?",
+   "gold": "32",
+   "answer": "32"
+  },
+  {
+   "round": 6,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 15 crates, each with 8 boxes, each with 4 items. How many items total?",
+   "gold": "480",
+   "answer": "480"
+  },
+  {
+   "round": 7,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "Tom has 102 dollars, spends 56 on a book, then earns 10. How many dollars does he have?",
+   "gold": "56",
+   "answer": "56"
+  },
+  {
+   "round": 7,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A store has 6 shelves, each with 7 items. 10 items are sold. How many items remain?",
+   "gold": "32",
+   "answer": "32"
+  },
+  {
+   "round": 7,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A box has 8 rows of 5 chocolates. 3 are eaten. How many chocolates remain?",
+   "gold": "37",
+   "answer": "37"
+  },
+  {
+   "round": 8,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "A box has 9 rows of 7 chocolates. 6 are eaten. How many chocolates remain?",
+   "gold": "57",
+   "answer": "57"
+  },
+  {
+   "round": 8,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 8 crates, each with 6 boxes, each with 6 items. How many items total?",
+   "gold": "288",
+   "answer": "288"
+  },
+  {
+   "round": 8,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 8 crates, each with 6 boxes, each with 6 items. How many items total?",
+   "gold": "288",
+   "answer": "288"
+  },
+  {
+   "round": 9,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "A box has 8 rows of 5 chocolates. 3 are eaten. How many chocolates remain?",
+   "gold": "37",
+   "answer": "37"
+  },
+  {
+   "round": 9,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A box has 7 rows of 5 chocolates. 2 are eaten. How many chocolates remain?",
+   "gold": "33",
+   "answer": "33"
+  },
+  {
+   "round": 9,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 13 crates, each with 7 boxes, each with 4 items. How many items total?",
+   "gold": "364",
+   "answer": "364"
+  },
+  {
+   "round": 10,
+   "agent": 0,
+   "confidence": 0.95,
+   "correct": 1.0,
+   "q": "A warehouse stores 13 crates, each with 7 boxes, each with 4 items. How many items total?",
+   "gold": "364",
+   "answer": "364"
+  },
+  {
+   "round": 10,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A warehouse stores 12 crates, each with 6 boxes, each with 4 items. How many items total?",
+   "gold": "288",
+   "answer": "288"
+  },
+  {
+   "round": 10,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "A store has 2 shelves, each with 9 items. 4 items are sold. How many items remain?",
+   "gold": "14",
+   "answer": "14"
+  }
+ ]
+}

@@ -6,8 +6,8 @@ import json, os, random, statistics as st, io
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = os.path.dirname(HERE)
-RES = r"F:\Research\experiments\e4_n15_results.json"
-OUT = r"F:\Research\PAPER13_MERGED\e4_table_verification_20260808.json"
+RES = os.path.join(BASE, "e4_n15_results.json")
+OUT = os.path.join(BASE, "analyses", "e4_table_verification_20260808.json")
 
 res = json.load(open(RES, encoding="utf-8"))
 assert res["n_seeds"] == 30

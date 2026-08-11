@@ -1,6 +1,6 @@
 % TMLR SUBMISSION — official JmlrOrg/tmlr-style-file template structure
 % https://github.com/JmlrOrg/tmlr-style-file/blob/main/main.tex
-% Local reference: F:\Research\arxiv\main.tex (authoritative arxiv submission template)
+% Local reference: <ARCHIVE_ROOT>\arxiv\main.tex (authoritative arxiv submission template)
 %
 % Template structure:
 %   submission/preprint: \usepackage[preprint]{tmlr}  (anonymous, for TMLR double-blind)
@@ -8,7 +8,7 @@
 %   arxiv posting: \usepackage{tmlr}  (no option, de-anonymized)
 %
 % This document is the TMLR submission version: [preprint] + Anonymous Authors.
-% At acceptance time, run: python F:\\tmp\\camera_ready_switch.py --paper PAPER1
+% At acceptance time, run: python <LOCAL_TMP>\\camera_ready_switch.py --paper PAPER1
 \documentclass[11pt]{article}
 \usepackage[preprint]{tmlr}
 
@@ -82,6 +82,8 @@ This paper asks whether the two measured patterns can be studied in one framewor
 \end{enumerate}
 
 \noindent\textbf{Roadmap.} Section~2 documents \textit{Face~1} (strategy consensus) across four comparable sync/nosync pairs; Section~3 documents \textit{Face~2} (calibration contagion) with an eight-condition design, the pure-factor decomposition (90.8\% temporal share), and the joint experiment; Section~4 derives the metric-conditional noise relation from confidence-gated TTRL; Section~5 documents model-specific self-evaluation; Section~6 reports external validation (Chatbot Arena and cross-domain); Section~7 unifies the two effects into the Constraining Force Hypothesis; Sections~8--12 discuss implications, practical tools, related work, limitations, and conclusions.
+
+\noindent\textbf{Relationship to companion paper.} The N-sensitivity analysis of the calibration design presented in Section~3 is developed further in the companion anonymized submission \emph{N-Sensitivity in LLM Evaluation: A Diagnostic Framework Illustrated by Four Case Studies}.
 
 \begin{table}[t]
 \centering
@@ -479,7 +481,7 @@ The strategy-consensus component of our framework has been independently validat
 
 However, the CV--decisiveness correlation is non-significant: $r(\CV, \text{dec}) = -0.075$ ($p = 0.75$, $n = 20$ models, point estimate)---the 95\% bootstrap CI crosses zero (estimated $[-0.39, +0.25]$ from Fisher's $z$ transform). This null result is consistent with the $H \to \CV$ link being specific to the adaptive TTRL process; falsification: refuted if a static (non-adaptive) evaluation across $\geq 20$ models produces a significant negative $r(H, \CV)$ at $p < 0.05$ with $|r| > 0.5$, or if the Chatbot Arena replication is overturned ($|r| > 0.3$ at $p < 0.05$). In the measured Chatbot Arena data, measurement stability is therefore driven by sample size rather than by evaluator signal strength.
 
-A held-out evaluator experiment using a model (deepseek-v4-pro) not present in the original studies is under way to test the within-condition causal chain on a new evaluator; replication standards follow the framework of~\citet{ioannidis2005most,button2013power} for declaring the held-out replication successful.
+A held-out evaluator experiment using a model (deepseek-v4-pro) not present in the original studies is planned to test the within-condition causal chain on a new evaluator but has not yet been completed; replication standards follow the framework of~\citet{ioannidis2005most,button2013power} for declaring the held-out replication successful, and completion remains a required step before mechanism-level claims.
 
 \subsection{Cross-Domain Generalizability}
 
@@ -652,11 +654,10 @@ R4 & ---             & ---          & $<2$ & Do \emph{not} apply calibration    
 \end{tabular}
 \end{table}
 
-\noindent Source code and Monitor implementation: available at acceptance (anonymous repository).
+\noindent Source code and Monitor implementation: \texttt{https://anonymous.4open.science/r/paper1-anon-49D5/}.
 
 \noindent\textbf{Deployment-decision case.} We illustrate the Monitor on a concrete selection problem: choose an evaluator configuration for a deployment where coupling, noise, and calibration must be traded off. Using the eleven-condition archive values for $\gamma$ and full-archive $\CV$ (script \texttt{evidence/scripts/p1c\_monitor\_case\_20260808.py}; output \texttt{analyses/p1c\_monitor\_case\_20260808.json}): the self-evaluation conditions (DS Self-Eval, DS$\\times$Qwen) have $\CV{=}5.48$ and $2.31$, so rules R3 (increase evaluator diversity) and R4 (CNR$<2$: do not apply calibration) apply; the high-$\gamma$, low-$\CV$ conditions (Qwen$\\times$DS, Qwen37, DS self-eval r30) trigger R2 (apply confidence-gating, $\CNR \\in [4.1, 4.8]$); Ablation max ($\\gamma{=}1.04$, $\\CV{=}0.37$) triggers R3 only. The Monitor therefore maps the same archive to distinct, actionable interventions per candidate---showing how the $\gamma$/$\CV$/CNR rules change a deployment decision rather than merely describing the frontier.
 The repository contains the Calibration Monitor artifact, the pure-factor decomposition scripts, and the cross-model self-evaluation analysis used in this paper.
-
 
 \section{Related Work}
 
@@ -770,12 +771,5 @@ Error (within, $H$) & 84 & --- & --- & --- \\
 \bottomrule
 \end{tabular}
 \end{table}
-
-\subsection*{Comments resolved}
-\begin{itemize}[leftmargin=*,nosep]
-\item \textbf{Line 7--8 comment duplicates}: redundant lines 7 and 8 in the original both referenced `[accepted]{tmlr}`; line 8 retained as documentation, line 7 simplified to a single canonical comment.
-\item \textbf{Line 17 comment inconsistency}: the original comment claimed `\emph{hidden because [preprint] without [accepted]}`, which contradicted the document's actual mode. With the camera-ready revert (Section~5.4), the document is now consistently in `[preprint]` mode for TMLR double-blind submission, and the comment accurately describes the de-anonymization behaviour.
-\item \textbf{line 13/15 comment}: removed (line 15 was a redundant comment; the body now correctly switches via the camera-ready switch at the editorial stage, not at submission).
-\end{itemize}
 
 \end{document}

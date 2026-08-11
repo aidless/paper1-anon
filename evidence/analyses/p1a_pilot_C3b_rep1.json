@@ -1,0 +1,463 @@
+{
+ "condition": "C3b",
+ "rep": 1,
+ "seed": 2,
+ "T": 10,
+ "N": 5,
+ "final_ece": 0.05,
+ "n_records": 50,
+ "mean_conf": 0.998,
+ "accuracy": 1.0,
+ "records": [
+  {
+   "round": 1,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 29 + 33?",
+   "gold": "62",
+   "answer": "62"
+  },
+  {
+   "round": 1,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 53 + 21?",
+   "gold": "74",
+   "answer": "74"
+  },
+  {
+   "round": 1,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 43 - 20?",
+   "gold": "23",
+   "answer": "23"
+  },
+  {
+   "round": 1,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 94 - 51?",
+   "gold": "43",
+   "answer": "43"
+  },
+  {
+   "round": 1,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 44 x 12?",
+   "gold": "528",
+   "answer": "528"
+  },
+  {
+   "round": 2,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 95 x 19?",
+   "gold": "1805",
+   "answer": "1805"
+  },
+  {
+   "round": 2,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 10 + 64?",
+   "gold": "74",
+   "answer": "74"
+  },
+  {
+   "round": 2,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 10 + 64?",
+   "gold": "74",
+   "answer": "74"
+  },
+  {
+   "round": 2,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 53 + 21?",
+   "gold": "74",
+   "answer": "74"
+  },
+  {
+   "round": 2,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 94 - 51?",
+   "gold": "43",
+   "answer": "43"
+  },
+  {
+   "round": 3,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 95 x 19?",
+   "gold": "1805",
+   "answer": "1805"
+  },
+  {
+   "round": 3,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 10 + 64?",
+   "gold": "74",
+   "answer": "74"
+  },
+  {
+   "round": 3,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 32 x 31?",
+   "gold": "992",
+   "answer": "992"
+  },
+  {
+   "round": 3,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 83 - 25?",
+   "gold": "58",
+   "answer": "58"
+  },
+  {
+   "round": 3,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 32 x 31?",
+   "gold": "992",
+   "answer": "992"
+  },
+  {
+   "round": 4,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 38 x 70?",
+   "gold": "2660",
+   "answer": "2660"
+  },
+  {
+   "round": 4,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 57 - 43?",
+   "gold": "14",
+   "answer": "14"
+  },
+  {
+   "round": 4,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 83 x 49?",
+   "gold": "4067",
+   "answer": "4067"
+  },
+  {
+   "round": 4,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 56 + 71?",
+   "gold": "127",
+   "answer": "127"
+  },
+  {
+   "round": 4,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 40 + 76?",
+   "gold": "116",
+   "answer": "116"
+  },
+  {
+   "round": 5,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 40 + 76?",
+   "gold": "116",
+   "answer": "116"
+  },
+  {
+   "round": 5,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 48 x 99?",
+   "gold": "4752",
+   "answer": "4752"
+  },
+  {
+   "round": 5,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 89 - 53?",
+   "gold": "36",
+   "answer": "36"
+  },
+  {
+   "round": 5,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 22 x 17?",
+   "gold": "374",
+   "answer": "374"
+  },
+  {
+   "round": 5,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 77 - 20?",
+   "gold": "57",
+   "answer": "57"
+  },
+  {
+   "round": 6,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 50 - 16?",
+   "gold": "34",
+   "answer": "34"
+  },
+  {
+   "round": 6,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 91 + 31?",
+   "gold": "122",
+   "answer": "122"
+  },
+  {
+   "round": 6,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 12 x 12?",
+   "gold": "144",
+   "answer": "144"
+  },
+  {
+   "round": 6,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 78 + 59?",
+   "gold": "137",
+   "answer": "137"
+  },
+  {
+   "round": 6,
+   "agent": 4,
+   "confidence": 0.9,
+   "correct": 1.0,
+   "q": "What is 52 - 42?",
+   "gold": "10",
+   "answer": "10"
+  },
+  {
+   "round": 7,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 24 + 51?",
+   "gold": "75",
+   "answer": "75"
+  },
+  {
+   "round": 7,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 12 x 12?",
+   "gold": "144",
+   "answer": "144"
+  },
+  {
+   "round": 7,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 52 - 42?",
+   "gold": "10",
+   "answer": "10"
+  },
+  {
+   "round": 7,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 78 + 74?",
+   "gold": "152",
+   "answer": "152"
+  },
+  {
+   "round": 7,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 56 x 37?",
+   "gold": "2072",
+   "answer": "2072"
+  },
+  {
+   "round": 8,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 24 + 51?",
+   "gold": "75",
+   "answer": "75"
+  },
+  {
+   "round": 8,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 71 + 80?",
+   "gold": "151",
+   "answer": "151"
+  },
+  {
+   "round": 8,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 78 + 74?",
+   "gold": "152",
+   "answer": "152"
+  },
+  {
+   "round": 8,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 78 + 74?",
+   "gold": "152",
+   "answer": "152"
+  },
+  {
+   "round": 8,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 34 x 13?",
+   "gold": "442",
+   "answer": "442"
+  },
+  {
+   "round": 9,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 56 x 37?",
+   "gold": "2072",
+   "answer": "2072"
+  },
+  {
+   "round": 9,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 65 + 80?",
+   "gold": "145",
+   "answer": "145"
+  },
+  {
+   "round": 9,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 36 + 98?",
+   "gold": "134",
+   "answer": "134"
+  },
+  {
+   "round": 9,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 85 x 35?",
+   "gold": "2975",
+   "answer": "2975"
+  },
+  {
+   "round": 9,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 34 x 13?",
+   "gold": "442",
+   "answer": "442"
+  },
+  {
+   "round": 10,
+   "agent": 0,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 12 + 41?",
+   "gold": "53",
+   "answer": "53"
+  },
+  {
+   "round": 10,
+   "agent": 1,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 96 - 51?",
+   "gold": "45",
+   "answer": "45"
+  },
+  {
+   "round": 10,
+   "agent": 2,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 96 - 51?",
+   "gold": "45",
+   "answer": "45"
+  },
+  {
+   "round": 10,
+   "agent": 3,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 44 + 29?",
+   "gold": "73",
+   "answer": "73"
+  },
+  {
+   "round": 10,
+   "agent": 4,
+   "confidence": 1.0,
+   "correct": 1.0,
+   "q": "What is 44 + 29?",
+   "gold": "73",
+   "answer": "73"
+  }
+ ]
+}

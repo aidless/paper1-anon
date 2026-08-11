@@ -32,5 +32,5 @@ for m in methods:
                      "cv5_se_of_mean": round(st.stdev([r["CV_N5"] for r in rs]) / (len(rs) ** 0.5), 4)})
     print(f"{m:14s} {a['n']:3d} {a['gamma']:8.4f} {dg:+7.1f} {a['cv5']:7.4f} {d5:+7.1f} {a['cv8']:7.4f} {d8:+7.1f}")
 json.dump({"method": "aggregate over 4 alpha x 3 tau per method (relative to none)",
-           "rows": out_rows, "input": SRC}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+           "rows": out_rows, "input": os.path.relpath(SRC, BASE)}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("saved", OUT)

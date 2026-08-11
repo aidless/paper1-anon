@@ -1,0 +1,44 @@
+{
+ "n_files": 16,
+ "by_cond": {
+  "C1": [
+   0.05,
+   0.05
+  ],
+  "C1b": [
+   0.05,
+   0.05
+  ],
+  "C2": [
+   0.05,
+   0.05
+  ],
+  "C3": [
+   0.05,
+   0.05
+  ],
+  "C3b": [
+   0.05,
+   0.05
+  ],
+  "C4": [
+   0.05,
+   0.05
+  ],
+  "Q2": [
+   0.05,
+   0.05
+  ],
+  "Q5": [
+   0.05,
+   0.05
+  ]
+ },
+ "decomposition": {
+  "pureT": 0.0,
+  "pureSync": 0.0,
+  "total": 0.0
+ },
+ "finding": "No calibration-fatigue signal: all conditions ECE~0.05, acc=conf=1.0 on synthetic 2-digit arithmetic; protocol needs harder multi-step items and explicit overconfidence injection to reproduce P3's +0.207/90.8% decomposition.",
+ "note": "pilot pipeline validated (API, parsing, ECE, checkpoint); protocol comparability NOT established on synthetic easy items."
+}
