@@ -25,6 +25,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install numpy scipy
       - name: verify_e4_table_20260808.py
-        run: python verify_e4_table_20260808.py
+        run: python evidence/scripts/verify_e4_table_20260808.py
       - name: verify_noise_sim_20260808.py
-        run: python verify_noise_sim_20260808.py
+        run: python evidence/scripts/verify_noise_sim_20260808.py
