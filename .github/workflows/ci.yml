@@ -28,3 +28,43 @@ jobs:
         run: python evidence/scripts/verify_e4_table_20260808.py
       - name: verify_noise_sim_20260808.py
         run: python evidence/scripts/verify_noise_sim_20260808.py
+
+  mutation-control:
+    name: The E4 verification gate can fail
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy scipy
+      - name: Change the seed count the gate asserts on and require a non-zero exit
+        # verify_e4_table_20260808.py:13 asserts res["n_seeds"] == 30 and reads
+        # evidence/e4_n15_results.json, which is the file it hashes into its output.
+        # The other script, verify_noise_sim, is a pure computation with no assertion,
+        # so perturbing a number there proves nothing — this one is the real gate.
+        run: |
+          set -euo pipefail
+          target=evidence/e4_n15_results.json
+          echo "--- baseline ---"
+          python evidence/scripts/verify_e4_table_20260808.py > /dev/null
+          echo "baseline passed"
+          echo "--- setting n_seeds to 31 ---"
+          cp "$target" /tmp/e4.json.bak
+          python - "$target" <<'PY2'
+          import json, pathlib, sys
+          p = pathlib.Path(sys.argv[1])
+          d = json.loads(p.read_text())
+          d["n_seeds"] = 31
+          p.write_text(json.dumps(d, indent=2))
+          print(f"n_seeds -> {d['n_seeds']}")
+          PY2
+          if python evidence/scripts/verify_e4_table_20260808.py > /dev/null 2>&1; then
+            echo "FAIL: the E4 gate accepted a result file with the wrong seed count"
+            exit 1
+          fi
+          cp /tmp/e4.json.bak "$target"
+          echo "OK: the E4 gate rejected the altered seed count"
